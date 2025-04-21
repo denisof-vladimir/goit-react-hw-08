@@ -1,0 +1,12 @@
+.form {
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 4px; */
+    margin-left: 40px;
+    gap: 10px;
+    /* border: 2px solid black; */
+}
+
+.button{
+    background: #ddcdcd;
+}

@@ -1,0 +1,31 @@
+.phoneLi{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    min-width: 150px;
+    border: 2px solid black;
+    
+}
+.phoneInfo{
+    /* flex-grow: 1; */
+    font-weight: 300;
+    color: rgb(2, 2, 23);
+
+}
+.deleteButtonPhone{
+    /* background: #e6e2e2;
+    margin: auto;
+    gap: 10px; */
+
+    background: #d6bab7;
+    color: rgb(27, 15, 15);
+    border: none;
+   
+    border-radius: 4px;
+}
+
+
+  

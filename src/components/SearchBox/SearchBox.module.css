@@ -1,0 +1,22 @@
+
+
+.label {
+    border-radius: 4px;
+    display: flex;
+    margin: 0 auto;
+    margin-left: 40px;
+    color: #19232d;
+    font-weight:300;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.input {
+
+    /* width: 100%; */
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 2dvh;
+    font-size: 16px;
+}
