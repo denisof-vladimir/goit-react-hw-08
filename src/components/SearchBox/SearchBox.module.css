@@ -1,4 +1,13 @@
-
+.searchBox {
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 40px;
+    gap: 10px;
+    border: 2px solid black;
+    display: flex;
+}
 
 .label {
     border-radius: 4px;

@@ -1,4 +1,5 @@
-import { lazy, Suspense, useState } from "react";
+// import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
 // import { Routes, Route } from "react-router"
 import Navigation from '../Navigation/Navigation';
@@ -18,11 +19,8 @@ const LoginPage = lazy(() => import('../../pages/Login/LoginPage'));
 const ContactsPage = lazy(() => import('../../pages/Contacts/ContactsPage'));
 
 export default function App() {
-  console.log("App-begin");
   const dispatch = useDispatch();
-  const isRefreshing = useSelector(selectIsRefreshing);
-  console.log("App-isRefreshing",isRefreshing);
-  
+  const isRefreshing = useSelector(selectIsRefreshing);  
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);

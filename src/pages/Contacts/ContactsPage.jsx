@@ -25,10 +25,9 @@ export default function ContactsPage() {
 
   return (
     <>
-      {/* <PageTitle>Your Contacts</PageTitle> */}
       {isLoading && <Loader />}
       {isError && <ErrorMessage />} 
-       
+      
       <ContactForm />
       <SearchBox />
       <ContactList   />

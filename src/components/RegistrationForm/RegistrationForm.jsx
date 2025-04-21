@@ -20,7 +20,6 @@ export default function RegistrationForm() {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, actions) => {
-    console.log("RegistrationForm-",values);
     dispatch(register(values));
     actions.resetForm();
   };

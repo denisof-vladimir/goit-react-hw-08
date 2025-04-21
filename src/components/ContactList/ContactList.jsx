@@ -18,20 +18,22 @@ export default function ContactList( )  {
     else { filteredContacts = useSelector(selectItems); }
    
     return (
-        <ul className={css.phoneUl}>
-           <h2> My Contacts</h2> 
-	        {filteredContacts.map((phone,index) => {
-                return (
-                    <li key={phone.id}>
-                        <Contact 
-                                id={phone.id}
-                                ind={index}
-                                name={phone.name}  
-                                number={phone.number}
-                                handleDeletePhone={handleDeletePhone} />
-                    </li>
+        <>
+            {/* <h2 className={css.h2phone} > My Contacts :</h2>  */}
+            <ul className={css.phoneUl}>           
+	             {filteredContacts.map((phone,index) => {
+                    return (
+                        <li key={phone.id}>
+                            <Contact 
+                                    id={phone.id}
+                                    ind={index}
+                                    name={phone.name}  
+                                    number={phone.number}
+                                    handleDeletePhone={handleDeletePhone} />
+                        </li>
                     );
-            })}
-        </ul>       
+                 })}
+             </ul>  
+        </>
     );
   };

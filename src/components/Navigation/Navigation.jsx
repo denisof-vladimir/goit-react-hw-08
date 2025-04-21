@@ -7,7 +7,6 @@ import css from './Navigation.module.css';
 export default function Navigation() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const user = useSelector(selectUser);
-  console.log("Navigation-",isLoggedIn,"-", user);
   return (
     <nav>
       <NavLink className={css.link} to="/">
